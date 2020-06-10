@@ -23,9 +23,11 @@ class SchoolClassesController < ApplicationController
 	  redirect_to school_class_path(@school_class)
 	end
 	
-	  def student_params
-      params.require(:student).permit(:first_name, :last_name)
-    end
+	private
+	
+  def school_class_params
+    params.require(:school_class).permit(:first_name, :last_name)
+  end
   
 end
 
