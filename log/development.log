@@ -205,3 +205,14 @@ Processing by StudentsController#new as HTML
 Completed 200 OK in 289ms (Views: 274.7ms | ActiveRecord: 0.8ms)
 
 
+Started POST "/students" for 76.124.168.60 at 2020-06-10 11:39:30 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"opCAd7Qw1xk0ZN0iFZx3bHa/be7F5DY3Z9nN/Gxy1rK5l9ttPGvZVeBtEqI0n/ZEUmojrMjTTxTYYX/PeBsWlw==", "student"=>{"first_name"=>"boba", "last_name"=>"fett"}, "commit"=>"Create Student"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "boba"], ["last_name", "fett"], ["created_at", "2020-06-10 11:39:30.386442"], ["updated_at", "2020-06-10 11:39:30.386442"]]
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://142.93.113.210:54204/students/4
+Completed 302 Found in 27ms (ActiveRecord: 8.5ms)
+
+
