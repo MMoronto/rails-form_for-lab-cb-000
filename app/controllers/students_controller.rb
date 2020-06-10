@@ -22,4 +22,8 @@ class StudentsController < ApplicationController
     @student.update(params.require(:student))
     redirect_to student_path(@student)
   end
+  
+  def post_params
+    params.require(:post).permit(:title, :description)
+  end
 end
