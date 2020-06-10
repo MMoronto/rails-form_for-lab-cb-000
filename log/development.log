@@ -355,3 +355,15 @@ Processing by SchoolClassesController#edit as HTML
 Completed 200 OK in 256ms (Views: 241.1ms | ActiveRecord: 0.8ms)
 
 
+Started PATCH "/school_classes/1" for 76.124.168.60 at 2020-06-10 11:41:31 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SchoolClassesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uPBl/gzL8itu5ZGQuqA81VBfyqWufsjurqa/cOLBt3Kj9z7khJD8Z7rsXhCbo739dIqE56NJsc0RHg1D9qh3Vw==", "school_class"=>{"title"=>"BJJ", "room_number"=>"99"}, "commit"=>"Update School class", "id"=>"1"}
+  [1m[36mSchoolClass Load (0.2ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "school_classes" SET "room_number" = ?, "updated_at" = ? WHERE "school_classes"."id" = ?[0m  [["room_number", 99], ["updated_at", "2020-06-10 11:41:31.401168"], ["id", 1]]
+  [1m[35m (10.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://142.93.113.210:54204/school_classes/1
+Completed 302 Found in 32ms (ActiveRecord: 12.0ms)
+
+
