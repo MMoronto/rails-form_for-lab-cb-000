@@ -377,3 +377,11 @@ Processing by SchoolClassesController#show as HTML
 Completed 200 OK in 276ms (Views: 260.7ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/school_classes/new" for 76.124.168.60 at 2020-06-10 11:41:42 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SchoolClassesController#new as HTML
+  Rendering school_classes/new.html.erb within layouts/application
+  Rendered school_classes/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 253ms (Views: 237.7ms | ActiveRecord: 0.6ms)
+
+
