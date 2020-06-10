@@ -216,3 +216,13 @@ Redirected to http://142.93.113.210:54204/students/4
 Completed 302 Found in 27ms (ActiveRecord: 8.5ms)
 
 
+Started GET "/students/4" for 76.124.168.60 at 2020-06-10 11:39:32 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 222ms (Views: 181.1ms | ActiveRecord: 0.7ms)
+
+
